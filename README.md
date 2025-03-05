@@ -4,7 +4,7 @@
 
 This project examines the integration of Low-Rank Adaptation (LoRA) methods into YOLOS-Small, a Vision Transformer-based object detection model. The goal is to explore whether fine-tuning techniques can improve computational efficiency while maintaining detection accuracy on the COCO 2017 dataset.
 
-The YOLOS-Small model, sourced from Hugging Face's `hustvl/yolos-small` repository, was used as the baseline. The study evaluates various LoRA-based approaches, including LoRA, AdaLoRA, LoHa, and LoKr, to determine their impact on model performance.
+The YOLOS-Small model, sourced from [Hugging Face's YOLOS-Small repository](https://huggingface.co/hustvl/yolos-small), was used as the baseline. The study evaluates various LoRA-based approaches, including LoRA, AdaLoRA, LoHa, and LoKr, to determine their impact on model performance.
 
 This project was developed as part of the Deep Learning course at Ben-Gurion University (2024).
 
