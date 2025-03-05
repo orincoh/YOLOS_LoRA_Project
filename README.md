@@ -6,7 +6,7 @@ This project examines the integration of Low-Rank Adaptation (LoRA) methods into
 
 The YOLOS-Small model, sourced from [Hugging Face's YOLOS-Small repository](https://huggingface.co/hustvl/yolos-small), was used as the baseline. The study evaluates various LoRA-based approaches, including LoRA, AdaLoRA, LoHa, and LoKr, to determine their impact on model performance.
 
-This project was developed as part of the Deep Learning course at Ben-Gurion University (2024).
+This project was developed as part of the Deep Learning course at Ben-Gurion University (2025).
 
 ## Dataset
 
