@@ -1266,6 +1266,6 @@ else:
     plt.figure(figsize=(10, 6))
     plt.bar(selected_categories, [category_map[cat] for cat in selected_categories], color=colors)
     plt.xticks(rotation=45)
-    plt.ylabel('mAP per Category')
+    plt.ylabel('mAP per Category-AdaLoRA')
     plt.grid(False)
     plt.show()
