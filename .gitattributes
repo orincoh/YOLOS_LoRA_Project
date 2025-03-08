@@ -1,0 +1,4 @@
+Models[[:space:]]with[[:space:]]LoRA[[:space:]]Variants/*.pt filter=lfs diff=lfs merge=lfs -text
+Models[[:space:]]with[[:space:]]LoRA[[:space:]]Variants/*.h5 filter=lfs diff=lfs merge=lfs -text
+Models[[:space:]]with[[:space:]]LoRA[[:space:]]Variants/*.onnx filter=lfs diff=lfs merge=lfs -text
+Models[[:space:]]with[[:space:]]LoRA[[:space:]]Variants/*.pth filter=lfs diff=lfs merge=lfs -text
