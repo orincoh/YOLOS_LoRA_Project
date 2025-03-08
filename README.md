@@ -40,7 +40,7 @@ This repository contains the following files and directories:
   - These models can be loaded directly in the corresponding sections of the main script.
 - **`Visualizations/`** – Graphs and visualizations generated during training and evaluation.
 - **`Enhancing YOLOS-S through Advanced LoRA Methods.pdf`** – The final project report summarizing the findings.
-- **`Part1_setup_and_data_understanding.ipynb` → `Part7_final_results.ipynb`**  
+- **`Part1_setup_and_data_understanding.ipynb` → `Part7_models_comparison.ipynb`**  
   - These **seven Jupyter Notebook files** are structured **for display purposes only** and include outputs of different steps in the process.  
   - They **are not independently runnable**, as each part depends on the previous ones.  
   - The full executable code is available in **`Enhancing_YOLOS_S_through_Advanced_LoRA_Methods.py`**.
