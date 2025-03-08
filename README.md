@@ -31,14 +31,19 @@ The results indicate that there was no significant improvement over the baseline
 
 This repository contains the following files and directories:
 
-- `project_code.py` – The main script containing the implementation of the LoRA-based YOLOS-Small fine-tuning.
-- `models/` – Contains the trained YOLOS-Small models after fine-tuning:
+- **`Enhancing_YOLOS_S_through_Advanced_LoRA_Methods.py`** – The main script containing the implementation of the LoRA-based YOLOS-Small fine-tuning. This script is fully runnable and includes all necessary steps from data preprocessing to model training and evaluation.
+- **`Models with LoRA Variants/`** – Contains the trained YOLOS-Small models after fine-tuning:
   - `yolos_lora.pth`
   - `yolos_adalora.pth`
   - `yolos_loha.pth`
   - `yolos_lokr.pth`
-- `visualizations/` – Graphs and visualizations generated during evaluation.
-- `project_report.pdf` – The final project report summarizing the findings.
+  - These models can be loaded directly in the corresponding sections of the main script.
+- **`Visualizations/`** – Graphs and visualizations generated during training and evaluation.
+- **`Enhancing YOLOS-S through Advanced LoRA Methods.pdf`** – The final project report summarizing the findings.
+- **`Part1_setup_and_data_understanding.ipynb` → `Part7_final_results.ipynb`**  
+  - These **seven Jupyter Notebook files** are structured **for display purposes only** and include outputs of different steps in the process.  
+  - They **are not independently runnable**, as each part depends on the previous ones.  
+  - The full executable code is available in **`Enhancing_YOLOS_S_through_Advanced_LoRA_Methods.py`**.
 
 ## Future Work
 
