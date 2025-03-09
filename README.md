@@ -33,10 +33,10 @@ This repository contains the following files and directories:
 
 - **`Enhancing_YOLOS_S_through_Advanced_LoRA_Methods.py`** – The main script containing the implementation of the LoRA-based YOLOS-Small fine-tuning. This script is fully runnable and includes all necessary steps from data preprocessing to model training and evaluation.
 - **`Models with LoRA Variants/`** – Contains the trained YOLOS-Small models after fine-tuning:
-  - `yolos_lora.pth`
-  - `yolos_adalora.pth`
-  - `yolos_loha.pth`
-  - `yolos_lokr.pth`
+  - `lora_model.pth`
+  - `adalora_model.pth`
+  - `loha_model.pth`
+  - `lokr_model.pth`
   - These models can be loaded directly in the corresponding sections of the main script.
 - **`Visualizations/`** – Graphs and visualizations generated during training and evaluation.
 - **`Enhancing YOLOS-S through Advanced LoRA Methods.pdf`** – The final project report summarizing the findings.
