@@ -10,7 +10,7 @@ This project was developed as part of the Deep Learning course at Ben-Gurion Uni
 
 ## Dataset
 
-- The dataset used in this project is COCO 2017, accessed through Hugging Face Datasets (`detection-datasets/coco`).
+- The dataset used in this project is COCO Validation 2017, accessed through Hugging Face Datasets (`detection-datasets/coco`).
 - The dataset underwent preprocessing using the YOLOS image processor to ensure compatibility with the model.
 - A subset of 2,000 training images and 900 test images was selected for experimentation.
 
