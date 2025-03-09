@@ -25,7 +25,22 @@ This project was developed as part of the Deep Learning course at Ben-Gurion Uni
 
 ## Evaluation & Results
 
-The results indicate that there was no significant improvement over the baseline model, though a slight enhancement was observed. This suggests that with further refinements, such as better hyperparameter tuning and a larger dataset, LoRA-based methods have the potential to improve performance further.
+The results indicate that the improvements in mAP over the baseline YOLOS-S model were minimal across all fine-tuned models. However, among the tested adaptations, AdaLoRA achieved the highest mAP@[0.5:0.95] on the test set. This suggests that while LoRA-based methods provide some benefits, their impact on YOLOS-S performance remains limited under the current experimental settings.
+
+A more significant improvement may require additional optimizations, such as better hyperparameter tuning, more extensive dataset augmentation, and multi-scale feature fusion techniques. The following table summarizes the overall mAP results across different confidence thresholds:
+
+| Model                  | mAP@50 | mAP@75 | mAP@[0.5:0.95] |
+|------------------------|--------|--------|----------------|
+| Baseline YOLOS-S       | 51.2714 | 34.2762 | 33.2379       |
+| YOLOS-S with LoRA      | 51.6249 | 34.3871 | 33.3389       |
+| YOLOS-S with AdaLoRA   | 51.5363 | 34.4044 | **33.3447**   |
+| YOLOS-S with LoHa      | **51.6466** | 34.2496 | 33.2727       |
+| YOLOS-S with LoKr      | 51.4323 | **34.5513** | 33.3272       |
+
+Despite the marginal differences, AdaLoRA achieved the highest overall mAP@[0.5:0.95], indicating that its adaptive rank allocation may contribute to a slight enhancement in detection accuracy. However, detecting small objects remains a challenge across all fine-tuned models, with no significant improvements in mAP for small-object categories. 
+
+Future research should focus on refining fine-tuning strategies, optimizing loss weighting, and incorporating additional pretraining techniques to further enhance performance.
+
 
 ## Project Files
 
@@ -45,11 +60,6 @@ This repository contains the following files and directories:
   - They **are not independently runnable**, as each part depends on the previous ones.  
   - The full executable code is available in **`Enhancing_YOLOS_S_through_Advanced_LoRA_Methods.py`**.
 
-## Future Work
-
-- Improve hyperparameter optimization to better leverage LoRA-based adaptations.
-- Explore additional fine-tuning strategies to enhance object detection performance.
-- Increase the dataset size to allow for more comprehensive training and evaluation.
 
 ## Authors
 
