@@ -37,6 +37,7 @@ The following table summarizes the overall mAP results across different confiden
 | YOLOS-S with LoKr      | 51.4323 | **34.5513** | 33.3272       |
 
 Despite the marginal differences, AdaLoRA achieved the highest overall mAP@[0.5:0.95], indicating that its adaptive rank allocation may contribute to a slight enhancement in detection accuracy. However, detecting small objects remains a challenge across all fine-tuned models, with no significant improvements in mAP for small-object categories. 
+
 A more significant improvement may require additional optimizations, such as configuration tuning, loss balancing, and model integration, to enhance adaptation and performance. 
 
 ## Project Files
