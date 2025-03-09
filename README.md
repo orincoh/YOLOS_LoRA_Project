@@ -12,7 +12,7 @@ This project was developed as part of the Deep Learning course at Ben-Gurion Uni
 
 - The dataset used in this project is COCO Validation 2017, accessed through Hugging Face Datasets (`detection-datasets/coco`).
 - The dataset underwent preprocessing using the YOLOS image processor to ensure compatibility with the model.
-- A subset of 2,000 training and validation images and 900 test images was selected for experimentation.
+- A subset of 2,100 training and validation images and 900 test images was selected for experimentation.
 
 ## LoRA Variants Implemented
 
@@ -25,9 +25,8 @@ This project was developed as part of the Deep Learning course at Ben-Gurion Uni
 
 ## Evaluation & Results
 
-The results indicate that the improvements in mAP over the baseline YOLOS-S model were minimal across all fine-tuned models. However, among the tested adaptations, AdaLoRA achieved the highest mAP@[0.5:0.95] on the test set. This suggests that while LoRA-based methods provide some benefits, their impact on YOLOS-S performance remains limited under the current experimental settings.
-
-A more significant improvement may require additional optimizations, such as better hyperparameter tuning, more extensive dataset augmentation, and multi-scale feature fusion techniques. The following table summarizes the overall mAP results across different confidence thresholds:
+The results indicate that the improvements in mAP over the baseline YOLOS-S model were minimal across all fine-tuned models. This suggests that while LoRA-based methods provide some benefits, their impact on YOLOS-S performance remains limited under the current experimental settings.
+The following table summarizes the overall mAP results across different confidence thresholds:
 
 | Model                  | mAP@50 | mAP@75 | mAP@[0.5:0.95] |
 |------------------------|--------|--------|----------------|
@@ -38,9 +37,7 @@ A more significant improvement may require additional optimizations, such as bet
 | YOLOS-S with LoKr      | 51.4323 | **34.5513** | 33.3272       |
 
 Despite the marginal differences, AdaLoRA achieved the highest overall mAP@[0.5:0.95], indicating that its adaptive rank allocation may contribute to a slight enhancement in detection accuracy. However, detecting small objects remains a challenge across all fine-tuned models, with no significant improvements in mAP for small-object categories. 
-
-Future research should focus on refining fine-tuning strategies, optimizing loss weighting, and incorporating additional pretraining techniques to further enhance performance.
-
+A more significant improvement may require additional optimizations, such as configuration tuning, loss balancing, and model integration, to enhance adaptation and performance. 
 
 ## Project Files
 
